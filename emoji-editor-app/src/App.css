@@ -1,30 +1,60 @@
-.header{
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background-color: white; 
+}
+
+.header {
   text-align: center;
+  position: relative; 
+  z-index: 10;
+  font-size: 3rem;
+  color: #ec4899;
 }
 
-.min-h-screen{
+.min-h-screen {
   min-height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center; 
+  align-items: flex-start; 
+  padding-top: 50px; 
 }
 
-.w-full{
-  width: 100;
+.w-full {
+  width: 100%;
 }
 
-.relative{
+.relative {
   position: relative;
 }
 
-.absolute{
+.absolute {
   position: absolute;
 }
 
-.inset-0{
+.inset-0 {
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
 }
 
-.z-0{
+.z-0 {
   z-index: 0;
+}
+
+.pink-glow {
+  position: absolute;
+  inset: 0; 
+  z-index: 0;
+  background: 
+    radial-gradient(circle at 30% 30%, #ff9ce0 0%, transparent 50%),
+    radial-gradient(circle at 70% 70%, #ec4899 0%, transparent 60%),
+    radial-gradient(circle at 50% 50%, #ffffff 0%, transparent 40%);
+  filter: blur(100px);
 }
