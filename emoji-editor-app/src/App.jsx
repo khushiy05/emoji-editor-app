@@ -1,7 +1,9 @@
 import React from 'react';
 import './App.css';
+import { useState } from 'react';
 
 function App() {
+  const [emoji, setEmoji]= useState("😜");
   return (
     <div className="min-h-screen w-full bg-white relative">
       {/* Pink Glow Background */}
@@ -16,15 +18,24 @@ function App() {
       >
 
       <h1 className="header">EMOTIFY</h1>
-      
-      <p className="tagline">
+
+      <h3 className="tagline">
         ✨ Create. Edit. Express. Design your own emojis and bring your emotions
         to life with Emotify 🎨
-      </p>
+      </h3>
+
+      <div className='emoji-container'> 
+        {emoji}
+
+      </div>
     </div>
     </div>
   );
 }
+
+
+
+
 
 export default App;
 

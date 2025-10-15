@@ -61,4 +61,18 @@ body, html {
 
 .tagline{
   text-align: center;
+  color: #ec4899;
+}
+
+.emoji-container{
+  background-color: #f582d0;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  border-radius: 20px;
+  border: 2px solid #9b044f;
+  
 }
