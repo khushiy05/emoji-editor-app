@@ -24,9 +24,17 @@ function App() {
         to life with Emotify 🎨
       </h3>
 
-      <div className='emoji-container'> 
-        {emoji}
+      <div className='emoji-container'>{emoji}</div>
 
+      <div className='emoji-picker'>
+      <div className='emoji-option'>🌌</div>
+      <div className='emoji-option'>🚀</div>
+      <div className='emoji-option'>🌛</div>
+      <div className='emoji-option'>🛸</div>
+      <div className='emoji-option'>🌙</div>
+      <div className='emoji-option'>🛰️</div>
+      <div className='emoji-option'>💫</div>
+      <div className='emoji-option'>☄️</div>
       </div>
     </div>
     </div>

@@ -74,5 +74,27 @@ body, html {
   margin: 0 auto;
   border-radius: 20px;
   border: 2px solid #9b044f;
-  
+}
+
+.emoji-picker{
+  width: fit-content;
+  border: 1px solid #ec4899;
+  padding: 10px 5px;
+  border-radius: 10px;
+  background-color: #ffc9ee;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  flex-wrap: wrap;
+}
+
+.emoji-option{
+  font-size: 18px;
+  background-color: white;
+  padding: 5px 10px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+
 }
