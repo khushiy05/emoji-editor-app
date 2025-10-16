@@ -27,14 +27,14 @@ function App() {
       <div className='emoji-container'>{emoji}</div>
 
       <div className='emoji-picker'>
-      <div className='emoji-option'>🌌</div>
-      <div className='emoji-option'>🚀</div>
-      <div className='emoji-option'>🌛</div>
-      <div className='emoji-option'>🛸</div>
-      <div className='emoji-option'>🌙</div>
-      <div className='emoji-option'>🛰️</div>
-      <div className='emoji-option'>💫</div>
-      <div className='emoji-option'>☄️</div>
+      <div className='emoji-option' onClick={() =>{ setEmoji("🌌")}}>🌌</div>
+      <div className='emoji-option' onClick={() =>{ setEmoji("🚀")}}>🚀</div>
+      <div className='emoji-option' onClick={() =>{ setEmoji("🌛")}}>🌛</div>
+      <div className='emoji-option' onClick={() =>{ setEmoji("🛸")}}>🛸</div>
+      <div className='emoji-option' onClick={() =>{ setEmoji("🌙")}}>🌙</div>
+      <div className='emoji-option' onClick={() =>{ setEmoji("🛰️")}}>🛰️</div>
+      <div className='emoji-option' onClick={() =>{ setEmoji("💫")}}>💫</div>
+      <div className='emoji-option' onClick={() =>{ setEmoji("☄️")}}>☄️</div>
       </div>
     </div>
     </div>
