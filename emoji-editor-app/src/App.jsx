@@ -1,9 +1,12 @@
 import React from 'react';
 import './App.css';
 import { useState } from 'react';
+import EmojiButton from './EmojiButton/EmojiButton';
 
 function App() {
   const [emoji, setEmoji]= useState("😜");
+  const [sliderValue, setSliderValue] = useState(50);
+
   return (
     <div className="min-h-screen w-full bg-white relative">
       {/* Pink Glow Background */}
@@ -26,15 +29,20 @@ function App() {
 
       <div className='emoji-container'>{emoji}</div>
 
+      <div className='slider-container'>
+        {sliderValue}
+        <input type="range" min="0" max="100" className="slider" onChange={(e) => {setSliderValue(e.target.value) }} />
+      </div>
+
       <div className='emoji-picker'>
-      <div className='emoji-option' onClick={() =>{ setEmoji("🌌")}}>🌌</div>
-      <div className='emoji-option' onClick={() =>{ setEmoji("🚀")}}>🚀</div>
-      <div className='emoji-option' onClick={() =>{ setEmoji("🌛")}}>🌛</div>
-      <div className='emoji-option' onClick={() =>{ setEmoji("🛸")}}>🛸</div>
-      <div className='emoji-option' onClick={() =>{ setEmoji("🌙")}}>🌙</div>
-      <div className='emoji-option' onClick={() =>{ setEmoji("🛰️")}}>🛰️</div>
-      <div className='emoji-option' onClick={() =>{ setEmoji("💫")}}>💫</div>
-      <div className='emoji-option' onClick={() =>{ setEmoji("☄️")}}>☄️</div>
+        <EmojiButton emoji={"🌌"} setEmoji={setEmoji}/>
+        <EmojiButton emoji={"🚀"} setEmoji={setEmoji}/>
+        <EmojiButton emoji={"🌛"} setEmoji={setEmoji}/>
+        <EmojiButton emoji={"🛸"} setEmoji={setEmoji}/>
+        <EmojiButton emoji={"🌙"} setEmoji={setEmoji}/>
+        <EmojiButton emoji={"🛰️"} setEmoji={setEmoji}/>
+        <EmojiButton emoji={"💫"} setEmoji={setEmoji}/>
+        <EmojiButton emoji={"☄️"} setEmoji={setEmoji}/>
       </div>
     </div>
     </div>

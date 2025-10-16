@@ -96,5 +96,10 @@ body, html {
   margin: 5px;
   cursor: pointer;
   border-radius: 5px;
+}
 
+.slider-container{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }
