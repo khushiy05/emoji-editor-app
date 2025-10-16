@@ -27,10 +27,17 @@ function App() {
         to life with Emotify 🎨
       </h3>
 
-      <div className='emoji-container'>{emoji}</div>
+      <div className="emoji-container"
+        style={{
+    fontSize: `${sliderValue}px`,
+  }}
+   >
+  {emoji}
+</div>
+
 
       <div className='slider-container'>
-        {sliderValue}
+       
         <input type="range" min="0" max="100" className="slider" onChange={(e) => {setSliderValue(e.target.value) }} />
       </div>
 
