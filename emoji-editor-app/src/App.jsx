@@ -2,10 +2,12 @@ import React from 'react';
 import './App.css';
 import { useState } from 'react';
 import EmojiButton from './EmojiButton/EmojiButton';
+import ColorButton from './ColorButton/ColorButton';
 
 function App() {
   const [emoji, setEmoji]= useState("😜");
   const [sliderValue, setSliderValue] = useState(50);
+  const [bgcolor, setBGcolor] = useState("#ffffff");
 
   return (
     <div className="min-h-screen w-full bg-white relative">
@@ -30,6 +32,7 @@ function App() {
       <div className="emoji-container"
         style={{
     fontSize: `${sliderValue}px`,
+    backgroundColor: bgcolor,
   }}
    >
   {emoji}
@@ -50,6 +53,11 @@ function App() {
         <EmojiButton emoji={"🛰️"} setEmoji={setEmoji}/>
         <EmojiButton emoji={"💫"} setEmoji={setEmoji}/>
         <EmojiButton emoji={"☄️"} setEmoji={setEmoji}/>
+      </div>
+
+      <div className='color-picker'>
+        <ColorButton bgcolor={"#ffffff"} setBGcolor={setBGcolor}/>
+
       </div>
     </div>
     </div>
