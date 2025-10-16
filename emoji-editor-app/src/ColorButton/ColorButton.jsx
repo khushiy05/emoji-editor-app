@@ -2,7 +2,7 @@ import "./ColorButton.css";
 
 function ColorButton({bgcolor, setBGcolor}) {
   return (
-    <div className="color-option" onClick={() => {
+    <div className="color-button" onClick={() => {
         setBGcolor(bgcolor);
     }}
       style={{ backgroundColor: bgcolor}}

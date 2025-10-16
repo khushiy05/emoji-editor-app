@@ -53,10 +53,28 @@ function App() {
         <EmojiButton emoji={"🛰️"} setEmoji={setEmoji}/>
         <EmojiButton emoji={"💫"} setEmoji={setEmoji}/>
         <EmojiButton emoji={"☄️"} setEmoji={setEmoji}/>
+        <EmojiButton emoji={"👨‍🚀"} setEmoji={setEmoji}/>
+        <EmojiButton emoji={"🌓"} setEmoji={setEmoji}/>
+        <EmojiButton emoji={"🔭"} setEmoji={setEmoji}/>
+        <EmojiButton emoji={"🌏"} setEmoji={setEmoji}/>
       </div>
 
       <div className='color-picker'>
         <ColorButton bgcolor={"#ffffff"} setBGcolor={setBGcolor}/>
+        <ColorButton bgcolor={"#4EF5A0"} setBGcolor={setBGcolor}/>
+        <ColorButton bgcolor={"#FF47C4"} setBGcolor={setBGcolor}/>
+        <ColorButton bgcolor={"#3EC8FF"} setBGcolor={setBGcolor}/>
+        <ColorButton bgcolor={"#FFEC3E"} setBGcolor={setBGcolor}/>
+        <ColorButton bgcolor={"#B54BFF"} setBGcolor={setBGcolor}/>
+        <ColorButton bgcolor={"#FF6F61"} setBGcolor={setBGcolor}/>
+        <ColorButton bgcolor={"#00E1C6"} setBGcolor={setBGcolor}/>
+        <ColorButton bgcolor={"#FF8C42"} setBGcolor={setBGcolor}/>
+        <ColorButton bgcolor={"#C9F3FF"} setBGcolor={setBGcolor}/>
+        <ColorButton bgcolor={"#CFFFE0"} setBGcolor={setBGcolor}/>
+        <ColorButton bgcolor={"#D11A76"} setBGcolor={setBGcolor}/>
+        
+      
+
 
       </div>
     </div>

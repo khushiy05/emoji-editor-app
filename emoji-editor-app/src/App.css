@@ -65,7 +65,6 @@ body, html {
 }
 
 .emoji-container{
-  
   width: 150px;
   height: 150px;
   display: flex;
@@ -102,4 +101,18 @@ body, html {
   display: flex;
   justify-content: center;
   margin-top: 20px;
+}
+
+.color-picker{
+  width: fit-content;
+  border: 1px solid #ec4899;
+  padding: 10px 5px;
+  border-radius: 10px;
+  background-color: #ffc9ee;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  flex-wrap: wrap;
+  right: 0;
 }
