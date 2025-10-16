@@ -9,7 +9,13 @@ function App() {
   const [sliderValue, setSliderValue] = useState(50);
   const [bgcolor, setBGcolor] = useState("#ffffff");
 
+
+
+  
+
   return (
+
+    
     <div className="min-h-screen w-full bg-white relative">
       {/* Pink Glow Background */}
       <div
@@ -72,12 +78,16 @@ function App() {
         <ColorButton bgcolor={"#C9F3FF"} setBGcolor={setBGcolor}/>
         <ColorButton bgcolor={"#CFFFE0"} setBGcolor={setBGcolor}/>
         <ColorButton bgcolor={"#D11A76"} setBGcolor={setBGcolor}/>
-        
-      
-
-
       </div>
     </div>
+    
+    <footer className="footer">
+        <p>
+          Made with <span className="heart">💖</span> by{" "}
+          <span className="name">Khushi</span> | © 2025{" "}
+          <span className="brand">Emotify</span> 🌸✨
+        </p>
+      </footer>
     </div>
   );
 }
