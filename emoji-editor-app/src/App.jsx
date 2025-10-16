@@ -8,12 +8,21 @@ function App() {
   const [emoji, setEmoji]= useState("😜");
   const [sliderValue, setSliderValue] = useState(50);
   const [bgcolor, setBGcolor] = useState("#ffffff");
-
-
-
-  
+  const [page, setPage] = useState("home");
 
   return (
+    <>
+      {page === "home" ? (
+        <div className="home-container">
+          <h1 className="header">EMOTIFY</h1>
+          <p className="tagline">
+            "Emotify lets you create 🎨 and edit ✏️ your own emojis 😄, adjust colors 🌈 and sizes 🔢, and express yourself creatively ✨ like never before! 🚀"
+          </p>
+          <button className="play-button" onClick={() => setPage("game")}>
+            Play Game
+          </button>
+        </div>
+      ) : (
 
     
     <div className="min-h-screen w-full bg-white relative">
@@ -27,14 +36,7 @@ function App() {
           backgroundSize: "100% 100%",
         }}
       >
-
-      <h1 className="header">EMOTIFY</h1>
-
-      <h3 className="tagline">
-        ✨ Create. Edit. Express. Design your own emojis and bring your emotions
-        to life with Emotify 🎨
-      </h3>
-
+        
       <div className="emoji-container"
         style={{
     fontSize: `${sliderValue}px`,
@@ -87,8 +89,17 @@ function App() {
           <span className="name">Khushi</span> | © 2025{" "}
           <span className="brand">Emotify</span> 🌸✨
         </p>
+
+        {page === "game" && (
+         <button className="home-footer-button"
+      onClick={() => setPage("home")}
+    >Go to Home
+    </button>
+  )}
       </footer>
     </div>
+      )}
+      </>
   );
 }
 
