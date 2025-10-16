@@ -36,7 +36,7 @@ function App() {
           backgroundSize: "100% 100%",
         }}
       >
-        
+
       <div className="emoji-container"
         style={{
     fontSize: `${sliderValue}px`,
@@ -48,7 +48,6 @@ function App() {
 
 
       <div className='slider-container'>
-       
         <input type="range" min="0" max="100" className="slider" onChange={(e) => {setSliderValue(e.target.value) }} />
       </div>
 
