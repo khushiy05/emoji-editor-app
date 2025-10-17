@@ -6,7 +6,7 @@ import ColorButton from './ColorButton/ColorButton';
 import ImgUpdate from "./img/update.png";
 
 function App() {
-  const [emoji, setEmoji]= useState("😜");
+  const [emoji, setEmoji]= useState("🌈");
   const [sliderValue, setSliderValue] = useState(50);
   const [bgcolor, setBGcolor] = useState("#ffffff");
   const [page, setPage] = useState("home");
