@@ -38,21 +38,25 @@ function App() {
           backgroundSize: "100% 100%",
         }}
       >
+    <header className="header-banner">
+      Mix, match, and rotate your emojis! 🎭 Create your emoji world 🌌 with colors, size, and style! 🎨
+      </header>
 
-      <div className="emoji-container"
+      <div className='main-contained'>
+
+        <div className="emoji-container"
         style={{
-    fontSize: `${sliderValue}px`,
-    backgroundColor: bgcolor,
-  }}
-   >
-    <span style={{transform: `rotate(${angle}deg)`}}>
-    {emoji}
-  </span>
-</div>
-
+        fontSize: `${sliderValue}px`,
+        backgroundColor: bgcolor,
+        }}
+        >
+      <span style={{transform: `rotate(${angle}deg)`}}>
+      {emoji}
+      </span>
+      </div>
 
       <div className='slider-container'>
-        <input type="range" min="0" max="100" className="slider" onChange={(e) => {setSliderValue(e.target.value) }} />
+        <input type="range" min="10" max="150" className="slider" onChange={(e) => {setSliderValue(e.target.value) }} />
       </div>
 
       <div className='angle-container'>
@@ -91,7 +95,8 @@ function App() {
         <ColorButton bgcolor={"#D11A76"} setBGcolor={setBGcolor}/>
       </div>
     </div>
-    
+     </div>
+     
     <footer className="footer">
         <p>
           Made with <span className="heart">💖</span> by{" "}
