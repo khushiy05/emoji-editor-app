@@ -1,13 +1,13 @@
 .color-button{
-    font-size: 14px;
-    background-color: white;
-    padding: 5px 10px;
-    margin: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    border: 1px solid transparent;
-    height: 10px;}
-  
+  font-size: 18px;
+  background-color: white;
+  padding: 5px 10px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  height: 10px;
+  width: 10px;
+}
 
 .color-button:hover{
     transform: scale(1.1);

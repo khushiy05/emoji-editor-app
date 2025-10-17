@@ -41,9 +41,7 @@ function App() {
     <header className="header-banner">
       Mix, match, and rotate your emojis! 🎭 Create your emoji world 🌌 with colors, size, and style! 🎨
       </header>
-
-      <div className='main-contained'>
-
+      
         <div className="emoji-container"
         style={{
         fontSize: `${sliderValue}px`,
@@ -78,6 +76,11 @@ function App() {
         <EmojiButton emoji={"🌓"} setEmoji={setEmoji}/>
         <EmojiButton emoji={"🔭"} setEmoji={setEmoji}/>
         <EmojiButton emoji={"🌏"} setEmoji={setEmoji}/>
+        <EmojiButton emoji={"🦄"} setEmoji={setEmoji}/>
+        <EmojiButton emoji={"🎵"} setEmoji={setEmoji}/>
+        <EmojiButton emoji={"🎯"} setEmoji={setEmoji}/>
+        <EmojiButton emoji={"⚡"} setEmoji={setEmoji}/>
+
       </div>
 
       <div className='color-picker'>
@@ -95,8 +98,8 @@ function App() {
         <ColorButton bgcolor={"#D11A76"} setBGcolor={setBGcolor}/>
       </div>
     </div>
-     </div>
-     
+    
+
     <footer className="footer">
         <p>
           Made with <span className="heart">💖</span> by{" "}

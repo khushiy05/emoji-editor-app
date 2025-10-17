@@ -60,20 +60,18 @@ body, html {
 }
 
 .emoji-container {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 20px;
-  border: 2px solid #9b044f;
+  border: 2px solid #f079b5;
   position: absolute;
   top: 40%;          
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
-
 
 .emoji-picker{
   width: fit-content;
@@ -86,10 +84,12 @@ body, html {
   flex-direction: column;
   height: 200px;
   flex-wrap: wrap;
+   margin-left: 40px;
+   margin-top: 30px;
 }
 
 .emoji-option{
-  font-size: 18px;
+  font-size: 14px;
   background-color: white;
   padding: 5px 10px;
   margin: 5px;
@@ -111,8 +111,8 @@ body, html {
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
   z-index: 1000;
   display: flex;
-  justify-content: center;   
-  align-items: center;     
+  justify-content: center;   /* center content horizontally */
+  align-items: center;       /* center content vertically */
 }
 
 .slider-container{
@@ -121,7 +121,8 @@ body, html {
   margin-top: 100px;
 }
 
-.color-picker{
+
+.color-picker {
   width: fit-content;
   border: 1px solid #ec4899;
   padding: 10px 5px;
@@ -132,8 +133,14 @@ body, html {
   flex-direction: column;
   height: 200px;
   flex-wrap: wrap;
-  right: 0;
+  margin-top: 30px;
+
+  /* 👇 These two lines give space from right side */
+  right: 30px;       /* distance from right edge */
+  margin-right: 20px; /* optional — adds a bit more gap */
 }
+  
+
 
 .footer {
   position: fixed;
@@ -259,6 +266,7 @@ body, html {
   transform: scale(1.05);
 }
 
+
 .slider {
   width: 200px;          
   height: 8px;           
@@ -282,15 +290,6 @@ body, html {
 }
 
 
-.slider::-moz-range-thumb {
-  width: 20px;
-  height: 20px;
-  background: #ec4899;
-  border-radius: 50%;
-  border: 2px solid #9b044f;
-  cursor: pointer;
-}
-
 .angle-container{
  display: flex;
  justify-content: center;
@@ -307,3 +306,4 @@ body, html {
 .rotate-img:hover {
   transform: rotate(20deg) scale(1.1); 
 }
+
