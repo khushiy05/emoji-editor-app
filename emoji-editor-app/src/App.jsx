@@ -3,12 +3,14 @@ import './App.css';
 import { useState } from 'react';
 import EmojiButton from './EmojiButton/EmojiButton';
 import ColorButton from './ColorButton/ColorButton';
+import ImgUpdate from "./img/update.png";
 
 function App() {
   const [emoji, setEmoji]= useState("😜");
   const [sliderValue, setSliderValue] = useState(50);
   const [bgcolor, setBGcolor] = useState("#ffffff");
   const [page, setPage] = useState("home");
+  const [angle,  setAngle] = useState(0);
 
   return (
     <>
@@ -43,12 +45,20 @@ function App() {
     backgroundColor: bgcolor,
   }}
    >
-  {emoji}
+    <span style={{transform: `rotate(${angle}deg)`}}>
+    {emoji}
+  </span>
 </div>
 
 
       <div className='slider-container'>
         <input type="range" min="0" max="100" className="slider" onChange={(e) => {setSliderValue(e.target.value) }} />
+      </div>
+
+      <div className='angle-container'>
+        <img src={ImgUpdate} alt="rotate" className="rotate-img" onClick={()=>{
+          setAngle(angle+45);
+        }} />
       </div>
 
       <div className='emoji-picker'>
@@ -107,4 +117,3 @@ function App() {
 
 
 export default App;
-

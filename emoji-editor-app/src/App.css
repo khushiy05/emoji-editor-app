@@ -272,3 +272,20 @@ width: fit-content;
   border: 2px solid #9b044f;
   cursor: pointer;
 }
+
+.angle-container{
+ display: flex;
+ justify-content: center;
+}
+
+.rotate-img {
+  height: 40px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease; 
+}
+
+
+.rotate-img:hover {
+  transform: rotate(20deg) scale(1.1); 
+}
