@@ -86,7 +86,7 @@ body, html {
   flex-wrap: wrap;
   margin-left: 40px;
   right: 80%;
-  top: 25%; /* 👈 smaller value = moves higher */
+  top: 25%; 
 }
 
 
@@ -113,8 +113,8 @@ body, html {
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
   z-index: 1000;
   display: flex;
-  justify-content: center;   /* center content horizontally */
-  align-items: center;       /* center content vertically */
+  justify-content: center;   
+  align-items: center;       
 }
 
 .slider-container{
@@ -130,13 +130,13 @@ body, html {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap; /* ensures colors wrap nicely inside */
+  flex-wrap: wrap; 
   border-radius: 20px;
   border: 2px solid #f079b5;
   background-color: #ffc9ee;
   position: absolute;
   top: 39%;
-  left: 80%; /* adjust this to move it horizontally */
+  left: 80%; 
   transform: translate(-50%, -50%);
 }
   

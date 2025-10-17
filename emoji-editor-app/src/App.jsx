@@ -80,7 +80,6 @@ function App() {
         <EmojiButton emoji={"🎵"} setEmoji={setEmoji}/>
         <EmojiButton emoji={"🎯"} setEmoji={setEmoji}/>
         <EmojiButton emoji={"⚡"} setEmoji={setEmoji}/>
-
       </div>
 
       <div className='color-picker'>
@@ -119,9 +118,5 @@ function App() {
       </>
   );
 }
-
-
-
-
 
 export default App;
