@@ -73,7 +73,7 @@ body, html {
   transform: translate(-50%, -50%);
 }
 
-.emoji-picker{
+.emoji-picker {
   width: fit-content;
   border: 1px solid #ec4899;
   padding: 10px 5px;
@@ -84,9 +84,11 @@ body, html {
   flex-direction: column;
   height: 200px;
   flex-wrap: wrap;
-   margin-left: 40px;
-   margin-top: 30px;
+  margin-left: 40px;
+  right: 80%;
+  top: 25%; /* 👈 smaller value = moves higher */
 }
+
 
 .emoji-option{
   font-size: 14px;
@@ -123,21 +125,19 @@ body, html {
 
 
 .color-picker {
-  width: fit-content;
-  border: 1px solid #ec4899;
-  padding: 10px 5px;
-  border-radius: 10px;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* ensures colors wrap nicely inside */
+  border-radius: 20px;
+  border: 2px solid #f079b5;
   background-color: #ffc9ee;
   position: absolute;
-  display: flex;
-  flex-direction: column;
-  height: 200px;
-  flex-wrap: wrap;
-  margin-top: 30px;
-
-  /* 👇 These two lines give space from right side */
-  right: 30px;       /* distance from right edge */
-  margin-right: 20px; /* optional — adds a bit more gap */
+  top: 39%;
+  left: 80%; /* adjust this to move it horizontally */
+  transform: translate(-50%, -50%);
 }
   
 
