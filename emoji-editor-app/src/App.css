@@ -307,3 +307,80 @@ body, html {
   transform: rotate(20deg) scale(1.1); 
 }
 
+
+@media (max-width: 1024px) {
+  .emoji-picker {
+    position: relative;
+    right: 0;
+    top: 0;
+    margin: 20px auto;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .color-picker {
+    position: relative;
+    left: 0;
+    top: 0;
+    margin: 20px auto;
+    transform: none;
+  }
+
+  .emoji-container {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 20px auto;
+    transform: none;
+    width: 200px;
+    height: 180px;
+  }
+
+  .slider-container {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 700px) {
+  .header-banner {
+    font-size: 1rem;
+    padding: 5px;
+  }
+
+  .emoji-picker {
+    width: 500px;
+    height: 100px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px auto;
+  }
+
+  .color-picker {
+   width: 500px;
+    height: 100px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px auto;
+    
+  }
+
+  .emoji-container {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+    top: 30px;
+  }
+
+  .footer {
+    font-size: 0.8rem;
+    padding: 10px 0;
+  }
+
+  .home-footer-button {
+    font-size: 0.85rem;
+    padding: 6px 16px;
+  }
+}
